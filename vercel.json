@@ -1,1 +1,6 @@
-{ "rewrites": [{ "source": "criaçaoconta", "destination": "/criaçaoconta.html" }] }
+{
+  "rewrites": [
+    { "source": "/criaçaoconta", "destination": "/criaçaoconta.html" },
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
