@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ifood</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4C+X/6CkzwZRjn2Lq0aFvEvvBu8z8RzrN/RD4rAOWFdd5nhl4XjG6Mzrhb9V7LQScMx2g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/saldo_style.css">
+</head>
+<body>
+
+    <div class="sidebar bg-light" id="sidebar">
+        <div class="sidebar-content">
+            <button class="btn btn-light" id="toggleSidebar">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        <i class="bi bi-house"></i>
+                        <span class="sidebar-text">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">
+                        <i class="bi bi-grid"></i>
+                        <span class="sidebar-text">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-gear"></i>
+                        <span class="sidebar-text">Settings</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="sidebar-logo-container">
+                <img src="/imagens/l.png" alt="iFood Logo" class="sidebar-logo" id="sidebarLogo">
+                <img src="/imagens/l1.png" alt="iFood Logo Small" class="sidebar-logo-small" id="sidebarLogoSmall">
+            </div>
+            <div class="sidebar-footer text-center mt-auto p-3">
+                <div class="user-info d-flex align-items-center justify-content-center">
+                    <img src="/imagens/perfil.png" alt="User" class="rounded-circle user-image" id="userMenuToggle">
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-toggle text-white" id="userDropdownToggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdownToggle">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                        </ul>
+                    </div>
+                    <h3 class="user-greeting ms-2">Hi, <span class="fw-bold">Ana!</span></h3>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    <main>
+        <div id="container">
+            <div class="info-container">
+                <div class="card-container">
+                    <img src="/imagens/untitled-1-1024x1024.png" alt="Restaurant" class="card-img-top">
+                    <div class="card-body">
+                        <h2>Saldo Geral</h2>
+                        <button id="show-saldo-btn"><img src="/imagens/olho-fechado.png" alt="" width="30"></button>
+                        <div class="saldo-amount" id="saldo-amount" style="display:none;">
+                            R$ 1.234,56
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item"><h1><img src="/imagens/ok.jpg" alt="Icon" width="20px"> +R$ 60,00</h1><h2>Jeferson Cauã</h2></li>
+                            <li class="list-group-item"><h1><img src="/imagens/perda.png" alt="Icon" width="20px"> -R$ 18,98</h1><h2>Camilla Moraes</h2></li>
+                            <li class="list-group-item"><h1><img src="/imagens/perda.png" alt="Icon" width="20px"> -R$ 18,98</h1><h2>Nathan</h2></li>
+                            <li class="list-group-item"><h1><img src="/imagens/ok.jpg" alt="Icon" width="20px"> +R$ 60,00</h1><h2>Vinicius Oliva</h2></li>
+                            <li class="list-group-item"><h1><img src="/imagens/ok.jpg" alt="Icon" width="20px"> +R$ 60,00</h1><h2>Diogo Bittencourt</h2></li>
+                            <li class="list-group-item"><h1><img src="/imagens/ok.jpg" alt="Icon" width="20px"> +R$ 60,00</h1><h2>Bruno</h2></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <script src="/js/mobile-navbar.js"></script>  
+    </main>
+</body>
+</html>
