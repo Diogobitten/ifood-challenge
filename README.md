@@ -66,5 +66,5 @@ Este projeto é de uso pessoal de [Diogo Bittencourt](https://www.linkedin.com/i
 
 ---
 
-Feito com ❤️ por **Diogo Bittencourt** 🚀
+Feito por **Diogo Bittencourt** 🚀
 
